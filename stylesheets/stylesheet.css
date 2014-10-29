@@ -1,10 +1,25 @@
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+
 body {
   margin: 0;
   padding: 0;
-  background: #151515 url("../images/bkg.png") 0 0;
-  color: #eaeaea;
+  background-image: url("/images/landscape.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: #ffffff;
   font: 16px;
-  line-height: 1.5;
+  line-height: 1.5; 
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
 
@@ -22,7 +37,7 @@ section {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 20px;
+/*  margin: 0 0 20px; */
 }
 
 li {
@@ -36,30 +51,31 @@ li {
 */
 
 header {
-  background: rgba(0, 0, 0, 0.1);
+/* background: rgba(0, 0, 0, 0.1); */
   width: 100%;
-  border-bottom: 1px dashed #b5e853;
+/*  border-bottom: 1px dashed #b5e853; */
   padding: 20px 0;
   margin: 0 0 40px 0;
 }
 
 header h1 {
-  font-size: 30px;
+/*  font-size: 30px; */
   line-height: 1.5;
-  margin: 0 0 0 -40px;
-  font-weight: bold;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #b5e853;
+/*  margin: 0 0 0 -40px; */
+/*  font-weight: normal; */
+  font-family: Ubuntu, Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  /* color: #b5e853; */
+  color: #485257;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
                0 0 10px rgba(181, 232, 83, 0.1);
-  letter-spacing: -1px;
+/*  letter-spacing: -1px; */
   -webkit-font-smoothing: antialiased;
 }
 
 header h1:before {
-  content: "./ ";
-  font-size: 24px;
+  content: " ";
+/*  font-size: 24px; */
 }
 
 header h2 {
@@ -87,7 +103,7 @@ section img {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: Ubuntu, Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #b5e853;
   letter-spacing: -0.03em;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
@@ -219,7 +235,7 @@ hr {
 
 .btn-github .icon {
   opacity: 0.6;
-  background: url("../images/blacktocat.png") 0 0 no-repeat;
+  background: url("./images/blacktocat.png") 0 0 no-repeat;
 }
 
 /* Links
@@ -227,7 +243,8 @@ hr {
 */
 
 a {
-  color: #63c0f5;
+  /* color: #63c0f5; */
+  color: #525C38;
   text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
 }
 
@@ -244,4 +261,19 @@ a {
 
 .cf {
   zoom:1;
+}
+
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+}
+
+.icon_box {
+    position:fixed;
+    bottom:0;
+    right:0;
+    height:20px;
+    color: #ffffff;
 }
